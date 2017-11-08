@@ -4,7 +4,7 @@ package sharmat;
  *
  * @author Tamanna Sharma
  */
-abstract class Employee {
+public class Employee {
 
     private String name;
 
@@ -13,7 +13,9 @@ abstract class Employee {
 
     }
 
-    abstract void info();
+    public void info() {
+        System.out.println("The salary of " + name + " is $5.00");
+    }
 
     public String getName() {
         return name;

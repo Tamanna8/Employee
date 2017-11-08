@@ -14,15 +14,8 @@ public class EmployeeProject {
         list[0] = new PartTime("Jonny");
         list[1] = new FullTime("Bravo");
         for (Employee a : list) {
-            System.out.println("Employee: " + a.getName());
             a.info();
-            if (a instanceof PartTime) {
-                System.out.println("Job Title: "
-                        + ((PartTime) a).job());
-            }
-
         }
-
     }
 
 }
